@@ -1,0 +1,114 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/forgetPsw/index",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/infoRecord/index",
+			"style": {
+				"navigationBarTitleText": "信息登记",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/infoRecord/detail",
+			"style": {
+				"navigationBarTitleText": "人员详情"
+			}
+		},
+		{
+			"path": "pages/infoRecord/add",
+			"style": {
+				"navigationBarTitleText": "新增信息登记"
+			}
+		},
+		{
+			"path": "pages/tripRecord/index",
+			"style": {
+				"navigationBarTitleText": "出行记录",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tripRecord/detail",
+			"style": {
+				"navigationBarTitleText": "出行记录详情"
+			}
+		},
+		{
+			"path": "pages/report/index",
+			"style": {
+				"navigationBarTitleText": "邻里上报",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/report/detail",
+			"style": {
+				"navigationBarTitleText": "邻里上报详情"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "消息记录",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/message/detail",
+			"style": {
+				"navigationBarTitleText": "消息详情"
+			}
+		}
+		
+		// {
+		//     "pagePath": "pages/tripRecord/index",
+		//     "iconPath": "./static/icon_jilu.png",
+		//     "selectedIconPath": "static/icon_jilu_s.png",
+		//     "text": "出行记录"
+		// }, 
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {"titleNView": false}
+	},
+	"tabBar": {
+	    "color": "#909399",
+	    "selectedColor": "#218EFF",
+	    "borderStyle": "white",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/infoRecord/index",
+	        "iconPath": "static/icon_dengji.png",
+	        "selectedIconPath": "static/icon_dengji_s.png",
+	        "text": "信息登记"
+	    }, {
+	        "pagePath": "pages/report/index",
+	        "iconPath": "static/icon_lilshangbao.png",
+	        "selectedIconPath": "static/icon_lilshangbao_s.png",
+	        "text": "邻里上报"
+	    }, {
+	        "pagePath": "pages/message/index",
+	        "iconPath": "static/icon_xiaoxi.png",
+	        "selectedIconPath": "static/icon_xiaoxi_s.png",
+	        "text": "消息记录"
+	    }]
+	}
+}
